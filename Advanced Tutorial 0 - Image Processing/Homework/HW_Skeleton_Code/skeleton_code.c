@@ -19,7 +19,7 @@ int main(void) {
     	BMP_SetPaletteColor(imageOut, i, i, i, i);
     }
 
-    // START CODE HERE (modify median filter to sobel filter)
+    // START CODE HERE
 
 
 

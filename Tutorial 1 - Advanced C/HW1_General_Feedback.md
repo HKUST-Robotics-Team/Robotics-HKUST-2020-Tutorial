@@ -1,0 +1,10 @@
+# General Feedback on HW1
+1. Make sure your code can be compiled, some of you fail to do it before submission
+2.	Make sure you will not access any out of bound data, most of you get this error due to storing a string on an array has not enough size, for example, use scanf("%s") to get input like 01/01/2000, this string contains 11 characters including '\n', but most of you save it to a char array with 10 elements inside, so it will cause out of bound data access as '\n' will store in an out of bound memory address. That is not an excuse that it can run on my machine because sometime it will not access something critical but sometimes it will, and of course, that is an error. Most of you get a low mark because of this. This is your responsibility to avoid the error. You can try gcc -fsanitize=address,undefined *.c -std=c18 -o main && ./main (mac) to compile and check this error. For windows machine, I didn't know whether it works, if no, google is your friend.
+3.	A num of you use fopen() with a wrong file access mode
+4.	I think we have told your under FAQ of HW1 that you cannot modify i_give_you.h but still, some of you are doing this. This time we let you go but also, this is your responsibility to read all the description of the HW1
+5.	Some of you did not follow the input format said in the description of the HW1, this time we let you go but again, this is your responsibility to read all the description of the HW1
+6.	Remove your own debug message before submission, please
+7.	Many of you did not handle the '\n' which will be produced whenever you press the enter key, for example, On the menu page, if I type 'D' and press enter, many of you will output something like "Please input a date (DD/MM/YYYY):" and said invalid input this time I let you go but this is your responsibility to handle this case next time.
+8.	Using Windows API, it can't work on other machines. 
+I want to tell the marks of HW is not the only criteria when we think about the name list of the next stage. We inspect your code while we do the grading. Even you get a low mark in HW does not mean you have no chance to enter the next stage.
